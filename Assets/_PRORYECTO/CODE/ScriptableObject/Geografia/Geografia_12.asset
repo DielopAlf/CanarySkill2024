@@ -13,10 +13,20 @@ MonoBehaviour:
   m_Name: Geografia_12
   m_EditorClassIdentifier: 
   questionCategory: 0
+<<<<<<< HEAD
   statementQuestion: 
   options:
   - 
   - 
   - 
   - 
+=======
+  statementQuestion: "\xBFCu\xE1ntos continentes hay seg\xFAn Am\xE9rica del Norte
+    y compa\xF1\xEDa?"
+  options:
+  - 7
+  - 6
+  - 5
+  - No existen
+>>>>>>> c48ae039a90abbce511b660e765b34a2e43a058e
   correctAnswer: 0

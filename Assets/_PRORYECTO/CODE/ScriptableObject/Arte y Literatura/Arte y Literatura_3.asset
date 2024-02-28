@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 1
   statementQuestion: "\xBFQui\xE9n escribi\xF3 \u201CPinocho\u201D? "
   options:
-  - Carlos Collodi
   - Hans Crinstian Andersen
   - Charles Perrault
+  - Carlos Collodi
   - Lewis Carrol
-  correctAnswer: 1
+  correctAnswer: 3

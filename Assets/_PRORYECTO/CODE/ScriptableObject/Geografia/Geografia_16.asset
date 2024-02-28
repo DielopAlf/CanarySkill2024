@@ -13,10 +13,19 @@ MonoBehaviour:
   m_Name: Geografia_16
   m_EditorClassIdentifier: 
   questionCategory: 0
+<<<<<<< HEAD
   statementQuestion: 
   options:
   - 
   - 
   - 
   - 
+=======
+  statementQuestion: "\xBFD\xF3nde surge el r\xEDo Ebro?"
+  options:
+  - "Cant\xE1bria"
+  - Tenerife
+  - Amsterdam
+  - Galicia
+>>>>>>> c48ae039a90abbce511b660e765b34a2e43a058e
   correctAnswer: 0
