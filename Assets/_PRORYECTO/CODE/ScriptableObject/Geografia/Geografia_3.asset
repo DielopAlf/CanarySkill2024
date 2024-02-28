@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 0
   statementQuestion: 
-  options: []
+  options:
+  - 
+  - 
+  - 
+  - 
   correctAnswer: 0

@@ -10,9 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4d060773845f5478122a631d797175, type: 3}
-  m_Name: Geografia_19
+  m_Name: Deportes y Ocio_20
   m_EditorClassIdentifier: 
-  questionCategory: 0
-  statementQuestion: 
-  options: []
-  correctAnswer: 0
+  questionCategory: 4
+  statementQuestion: "\xBFCu\xE1l es el primer jugador en ganar las zapatillas de
+    oro?"
+  options:
+  - "Eus\xE9bio"
+  - James Vardy
+  - "Vin\xEDcius J\xFAnior"
+  - hibaut Courtois
+  correctAnswer: 1

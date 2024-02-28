@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4d060773845f5478122a631d797175, type: 3}
-  m_Name: Geografia_1
+  m_Name: Deportes y Ocio_19
   m_EditorClassIdentifier: 
-  statementQuestion: "\xBFEn qu\xE9 isla se realiza las Canary Skills 2024?"
+  questionCategory: 4
+  statementQuestion: Quien gano el balon de oro en 2018
   options:
-  - Madrid
-  - Mallorca
-  - Gran Canarias
-  - Tenerife
-  correctAnswer: 4
+  - Cristiano Ronaldo
+  - Luka Modric
+  - Lionel Messi
+  - Ronaldinho
+  correctAnswer: 0
