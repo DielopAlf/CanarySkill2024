@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_1
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: "\xBFEn qu\xE9 isla se realiza las Canary Skills 2024?"
+  statementQuestion: "\xBFQui\xE9n escribi\xF3 \u201CDon Quijote de la Mancha\u201D? "
   options:
-  - Madrid
-  - Mallorca
-  - Gran Canarias
-  - Tenerife
-  correctAnswer: 4
+  - Miguel de Cervantes
+  - Sancho Panza
+  - "Bel\xE9n Esteban"
+  - Johnny Depp
+  correctAnswer: 1

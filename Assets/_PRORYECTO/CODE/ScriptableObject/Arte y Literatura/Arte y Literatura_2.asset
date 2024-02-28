@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_2
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
-  options: []
-  correctAnswer: 0
+  statementQuestion: "\xBFQui\xE9n escribi\xF3 \u201CEl Se\xF1or de los Anillos\u201D? "
+  options:
+  - JRR Tolkien
+  - George RR Martin
+  - Robert Jordan
+  - Brandon Sanderson
+  correctAnswer: 1

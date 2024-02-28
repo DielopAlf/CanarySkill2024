@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_4
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
-  options: []
-  correctAnswer: 0
+  statementQuestion: "\xBFQui\xE9n escribi\xF3 \u201CLa Divina Comedia\u201D?  "
+  options:
+  - Dante Alighieri
+  - 'Juan Manuel Infante de Castilla '
+  - Paulo Coehlo
+  - "Gustavo Adolfo Su\xE1rez"
+  correctAnswer: 1

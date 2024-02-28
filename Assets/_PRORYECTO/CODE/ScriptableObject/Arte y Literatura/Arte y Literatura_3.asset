@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_3
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
-  options: []
-  correctAnswer: 0
+  statementQuestion: "\xBFQui\xE9n escribi\xF3 \u201CPinocho\u201D? "
+  options:
+  - Carlos Collodi
+  - Hans Crinstian Andersen
+  - Charles Perrault
+  - Lewis Carrol
+  correctAnswer: 1

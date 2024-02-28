@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_6
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
-  options: []
-  correctAnswer: 0
+  statementQuestion: "\xBFQui\xE9n escribi\xF3 \u201CLos Viajes de Gulliver\u201D?  "
+  options:
+  - Jonathan Swift
+  - El propio Gulliver
+  - Richard Swift
+  - 
+  correctAnswer: 1
