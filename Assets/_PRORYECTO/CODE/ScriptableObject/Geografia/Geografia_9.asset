@@ -13,10 +13,20 @@ MonoBehaviour:
   m_Name: Geografia_9
   m_EditorClassIdentifier: 
   questionCategory: 0
+<<<<<<< HEAD
   statementQuestion: 
   options:
   - 
   - 
   - 
   - 
+=======
+  statementQuestion: "\xBFCu\xE1l es la isla m\xE1s peque\xF1a del archipi\xE9lago
+    canario?"
+  options:
+  - La Graciosa
+  - El Hierro
+  - La Palma
+  - "Tu T\xEDa"
+>>>>>>> c48ae039a90abbce511b660e765b34a2e43a058e
   correctAnswer: 0

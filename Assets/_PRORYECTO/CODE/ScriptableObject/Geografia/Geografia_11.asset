@@ -13,10 +13,19 @@ MonoBehaviour:
   m_Name: Geografia_11
   m_EditorClassIdentifier: 
   questionCategory: 0
+<<<<<<< HEAD
   statementQuestion: 
   options:
   - 
   - 
   - 
   - 
+=======
+  statementQuestion: "\xBFCu\xE1ntos continentes hay seg\xFAn la mayor\xEDa del mundo?"
+  options:
+  - 6
+  - 7
+  - 5
+  - 20
+>>>>>>> c48ae039a90abbce511b660e765b34a2e43a058e
   correctAnswer: 0

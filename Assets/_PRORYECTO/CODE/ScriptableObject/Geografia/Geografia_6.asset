@@ -13,10 +13,20 @@ MonoBehaviour:
   m_Name: Geografia_6
   m_EditorClassIdentifier: 
   questionCategory: 0
+<<<<<<< HEAD
   statementQuestion: 
   options:
   - 
   - 
   - 
   - 
+=======
+  statementQuestion: "\xBFCu\xE1ntas islas componen a fecha 2024 el archipi\xE9lago
+    Canario?"
+  options:
+  - 8
+  - 7
+  - 10
+  - No existen, son una mentira del gobierno
+>>>>>>> c48ae039a90abbce511b660e765b34a2e43a058e
   correctAnswer: 0
