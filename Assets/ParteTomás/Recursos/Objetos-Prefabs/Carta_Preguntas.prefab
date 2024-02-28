@@ -183,7 +183,6 @@ GameObject:
   - component: {fileID: 7155451611627784555}
   - component: {fileID: 2001291690489308167}
   - component: {fileID: 108841564786814388}
-  - component: {fileID: 1618641876988172440}
   - component: {fileID: 7806488800358831352}
   m_Layer: 0
   m_Name: Carta_Preguntas
@@ -279,21 +278,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!111 &1618641876988172440
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8412884554052876622}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: f1507fb893cfc6d43a60833018f47f70, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &7806488800358831352
 MonoBehaviour:
   m_ObjectHideFlags: 0
