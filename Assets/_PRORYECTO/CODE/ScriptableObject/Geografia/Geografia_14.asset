@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_14
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFEn qu\xE9 continente se encuentra la Uni\xF3n Europea?"
+  options:
+  - Europa
+  - Asia
+  - China
+  - Lidl
   correctAnswer: 0

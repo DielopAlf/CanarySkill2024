@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_3
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFEn qu\xE9 provincias de Espa\xF1a se habla el Catal\xE1n?"
+  options:
+  - "Catalu\xF1a"
+  - Barcelona
+  - Francia
+  - "Pa\xEDs Vasco"
   correctAnswer: 0

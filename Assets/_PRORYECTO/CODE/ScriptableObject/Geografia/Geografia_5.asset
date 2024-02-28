@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Geografia_5
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFC\xF3mo se llama la cordillera que separa Espa\xF1a de
+    Europa?"
+  options:
+  - Los Pirineos
+  - Everest
+  - Teide
+  - "El Gran Ca\xF1\xF3n"
   correctAnswer: 0

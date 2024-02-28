@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_4
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFCu\xE1les son las ciudades aut\xF3nomas de Espa\xF1a?"
+  options:
+  - Ceuta y Melilla
+  - Tenerife y Gran Canaria
+  - 'Jerjes y Cleopatra '
+  - "Valencia y Castell\xF3n"
   correctAnswer: 0

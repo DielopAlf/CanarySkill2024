@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_18
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFCu\xE1l es el r\xEDo m\xE1s largo de la Pen\xEDnsula Ib\xE9rica?"
+  options:
+  - Tajo
+  - Ebro
+  - Nilo
+  - Pilo
   correctAnswer: 0

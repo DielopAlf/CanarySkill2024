@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_20
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFCu\xE1ntos pa\xEDses hay en Sudam\xE9rica?"
+  options:
+  - 13
+  - 12
+  - 14
+  - 1
   correctAnswer: 0

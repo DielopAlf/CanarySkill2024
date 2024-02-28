@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_19
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFCu\xE1l es el pa\xEDs m\xE1s peque\xF1o del mundo?"
+  options:
+  - Estado Vaticano
+  - Islas Canarias
+  - Madagascar
+  - Miami
   correctAnswer: 0

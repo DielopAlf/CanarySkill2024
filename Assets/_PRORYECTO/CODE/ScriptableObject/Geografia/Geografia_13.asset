@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_13
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFCu\xE1l es el continente m\xE1s grande?"
+  options:
+  - Asia
+  - "Am\xE9rica"
+  - "Atl\xE1ntida"
+  - "Espa\xF1a"
   correctAnswer: 0

@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_17
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFCu\xE1ntos municipios hay en Espa\xF1a?"
+  options:
+  - 8131
+  - 4219
+  - 239
+  - No se sabe
   correctAnswer: 0

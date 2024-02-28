@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_10
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFD\xF3nde se encuentra la monta\xF1a m\xE1s alta de Espa\xF1a?"
+  options:
+  - Tenerife
+  - Gran Canaria
+  - Madrid
+  - Francia
   correctAnswer: 0

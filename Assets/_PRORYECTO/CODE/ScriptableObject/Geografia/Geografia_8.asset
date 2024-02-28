@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_8
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFCu\xE1l es la isla m\xE1s poblada del archipi\xE9lago canario?"
+  options:
+  - Tenerife
+  - Gran Canaria
+  - No existen, son una mentira del gobierno
+  - Jerusalem
   correctAnswer: 0

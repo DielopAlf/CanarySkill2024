@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_7
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: 
-  options: []
+  statementQuestion: "\xBFCu\xE1les son las capitales de Canarias?"
+  options:
+  - Santa Cruz de Tenerife y Las Palmas de Gran Canarias
+  - Bolivia y Venezuela
+  - "Per\xFA y Ecuador"
+  - Argentina y Chile
   correctAnswer: 0
