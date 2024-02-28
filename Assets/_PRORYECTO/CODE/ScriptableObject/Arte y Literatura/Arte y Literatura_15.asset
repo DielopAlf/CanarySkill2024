@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Arte y Literatura_15
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
+  statementQuestion: "\xBFQui\xE9n escribi\xF3 el libro de  \u201CCharlie y la f\xE1brica
+    de chocolate\u201D? "
   options:
-  - 
-  - 
-  - 
-  - 
-  correctAnswer: 0
+  - Tim Burton
+  - Roal Dahl
+  - "Octavio Riob\xF3"
+  - Luke Skywalker
+  correctAnswer: 2

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_8
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
+  statementQuestion: "\xBFQui\xE9n escribi\xF3 \u201C1984\u201D? "
   options:
-  - 
-  - 
-  - 
-  - 
-  correctAnswer: 0
+  - 'Aldous Huxley '
+  - George Orwell
+  - 'Ray Bradbury '
+  - Franz Kafka
+  correctAnswer: 2

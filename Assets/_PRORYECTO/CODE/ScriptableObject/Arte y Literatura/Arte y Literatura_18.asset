@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_18
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
+  statementQuestion: Quien hizo "El David"
   options:
-  - 
-  - 
-  - 
-  - 
-  correctAnswer: 0
+  - Un amigo de "El david"
+  - Henry Moore
+  - Miguel Angel
+  - Alan Moore
+  correctAnswer: 3

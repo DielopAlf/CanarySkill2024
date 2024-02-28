@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_10
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
+  statementQuestion: "\xBFQui\xE9n pint\xF3 \u201CLa noche estrellada\u201D? "
   options:
-  - 
-  - 
-  - 
-  - 
-  correctAnswer: 0
+  - Vincent Van Gogh
+  - La Mona Lisa
+  - Pepe Benavente
+  - Don Pieza
+  correctAnswer: 1

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_11
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
+  statementQuestion: "\xBFQui\xE9n pint\xF3 \u201CLa \xDAltima Cena\u201D? "
   options:
-  - 
-  - 
-  - 
-  - 
-  correctAnswer: 0
+  - Aquillo Fuentes
+  - Leonardo Da Vinci
+  - Ohitera Marixeko
+  - Putin
+  correctAnswer: 2
