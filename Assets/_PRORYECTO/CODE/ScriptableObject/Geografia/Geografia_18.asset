@@ -13,19 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_18
   m_EditorClassIdentifier: 
   questionCategory: 0
-<<<<<<< HEAD
-  statementQuestion: 
+  statementQuestion: "\xBFCu\xE1l es el r\xEDo m\xE1s largo de la Pen\xEDnsula Ib\xE9rica? "
   options:
-  - 
-  - 
-  - 
-  - 
-=======
-  statementQuestion: "\xBFCu\xE1l es el r\xEDo m\xE1s largo de la Pen\xEDnsula Ib\xE9rica?"
-  options:
-  - Tajo
   - Ebro
   - Nilo
+  - Tajo
   - Pilo
->>>>>>> c48ae039a90abbce511b660e765b34a2e43a058e
-  correctAnswer: 0
+  correctAnswer: 3

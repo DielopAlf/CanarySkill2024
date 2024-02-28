@@ -13,19 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_2
   m_EditorClassIdentifier: 
   questionCategory: 0
-<<<<<<< HEAD
-  statementQuestion: 
+  statementQuestion: "\xBFCu\xE1l es la capital de Espa\xF1a? "
   options:
-  - 
-  - 
-  - 
-  - 
-=======
-  statementQuestion: "\xBFCu\xE1l es la capital de Espa\xF1a?"
-  options:
-  - Madrid
-  - Barcelona
-  - Valencia
   - Galicia
->>>>>>> c48ae039a90abbce511b660e765b34a2e43a058e
-  correctAnswer: 0
+  - Valencia
+  - Barcelona
+  - Madrid
+  correctAnswer: 4

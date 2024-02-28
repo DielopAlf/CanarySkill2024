@@ -13,19 +13,10 @@ MonoBehaviour:
   m_Name: Geografia_13
   m_EditorClassIdentifier: 
   questionCategory: 0
-<<<<<<< HEAD
-  statementQuestion: 
+  statementQuestion: "\xBFCu\xE1l es el continente m\xE1s grande? "
   options:
-  - 
-  - 
-  - 
-  - 
-=======
-  statementQuestion: "\xBFCu\xE1l es el continente m\xE1s grande?"
-  options:
+  - "Espa\xF1a"
+  - Atlantida
   - Asia
   - "Am\xE9rica"
-  - "Atl\xE1ntida"
-  - "Espa\xF1a"
->>>>>>> c48ae039a90abbce511b660e765b34a2e43a058e
-  correctAnswer: 0
+  correctAnswer: 3
