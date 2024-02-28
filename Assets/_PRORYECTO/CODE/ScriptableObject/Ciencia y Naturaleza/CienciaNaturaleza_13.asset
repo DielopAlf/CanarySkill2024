@@ -16,8 +16,8 @@ MonoBehaviour:
   statementQuestion: "\xBFCu\xE1l de estos elementos de la tabla per\xF3dica NO es
     un gas noble?"
   options:
-  - "Ox\xEDgeno"
   - Helio
   - Neon
   - "Rad\xF3n"
-  correctAnswer: 0
+  - "Ox\xEDgeno"
+  correctAnswer: 4

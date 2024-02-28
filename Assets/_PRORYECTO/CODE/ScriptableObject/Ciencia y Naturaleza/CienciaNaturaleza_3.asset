@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 3
   statementQuestion: "\xBFCu\xE1l es el animal m\xE1s grande del mundo?"
   options:
-  - Ballena azul
   - Elefante
   - Jirafa
+  - Ballena azul
   - "Tibur\xF3n ballena"
-  correctAnswer: 0
+  correctAnswer: 3

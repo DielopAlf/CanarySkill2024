@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 3
   statementQuestion: "\xBFC\xF3mo se le llama al \xF3rgano que nos permite escuchar?"
   options:
-  - "O\xEDdo"
   - Oreja
+  - "O\xEDdo"
   - "T\xEDmpano"
   - Cerebro
-  correctAnswer: 0
+  correctAnswer: 3

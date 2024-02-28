@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 3
   statementQuestion: "\xBFDe qu\xE9 \xE1tomos est\xE1 compuesto el agua?"
   options:
-  - "2 hidr\xF3geno y 1 ox\xEDgeno"
   - "2 ox\xEDgeno y 1 helio"
   - "2 helio y 1 ox\xEDgeno"
   - "2 ox\xEDgeno y 1 hidr\xF3geno"
-  correctAnswer: 0
+  - "2 hidr\xF3geno y 1 ox\xEDgeno"
+  correctAnswer: 4

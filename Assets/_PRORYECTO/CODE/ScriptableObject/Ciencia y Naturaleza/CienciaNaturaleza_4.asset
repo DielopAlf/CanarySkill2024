@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 3
   statementQuestion: "\xBFCu\xE1l es el animal terrestre m\xE1s veloz del mundo?"
   options:
-  - Guepardo
   - Berrendo
+  - Guepardo
   - Tigre siberiano
   - Gacela
-  correctAnswer: 0
+  correctAnswer: 2

@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 3
   statementQuestion: "\xBFQu\xE9 tubo transporta el ox\xEDgeno hasta los pulmones?"
   options:
-  - "Tr\xE1quea"
   - Laringe
+  - "Tr\xE1quea"
   - Faringe
   - Garganta
-  correctAnswer: 0
+  correctAnswer: 2

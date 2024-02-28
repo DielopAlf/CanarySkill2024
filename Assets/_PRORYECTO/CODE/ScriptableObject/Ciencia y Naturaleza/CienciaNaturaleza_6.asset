@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 3
   statementQuestion: "\xBFQu\xE9 animal pertenece a la familia \"canidae\"?"
   options:
-  - Coyote
-  - Hiena
+  - Tigre
   - "Camale\xF3n"
+  - Coyote
   - Canguro
-  correctAnswer: 0
+  correctAnswer: 3

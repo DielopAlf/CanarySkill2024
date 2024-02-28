@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 3
   statementQuestion: "\xBFC\xF3mo se le llama a un animal que toma leche materna?"
   options:
-  - "Mam\xEDferos"
   - Aves
   - Anfibios
   - Reptiles
-  correctAnswer: 0
+  - "Mam\xEDferos"
+  correctAnswer: 4

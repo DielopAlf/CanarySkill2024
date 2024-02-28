@@ -16,8 +16,8 @@ MonoBehaviour:
   statementQuestion: "\xBFQu\xE9 pez no tiene vejiga natatroia y debe siempre estar
     movi\xE9ndose?"
   options:
-  - "Tibur\xF3n"
   - Calamar
   - Estrella de mar
   - Anguila
-  correctAnswer: 0
+  - "Tibur\xF3n"
+  correctAnswer: 4

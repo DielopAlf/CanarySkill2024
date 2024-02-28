@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Deportes y Ocio_19
   m_EditorClassIdentifier: 
   questionCategory: 4
-  statementQuestion: Quien gano el balon de oro en 2018
+  statementQuestion: "\xBFQuien gano el balon de oro en 2018?"
   options:
   - Cristiano Ronaldo
   - Luka Modric

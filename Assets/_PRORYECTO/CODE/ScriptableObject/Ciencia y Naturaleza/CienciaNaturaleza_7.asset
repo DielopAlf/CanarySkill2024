@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 3
   statementQuestion: "\xBFCu\xE1l es el animal con m\xE1s dientes?"
   options:
-  - Pez gato
   - "Tibur\xF3n"
   - Pulpo
+  - Pez gato
   - Armadillo
-  correctAnswer: 0
+  correctAnswer: 3

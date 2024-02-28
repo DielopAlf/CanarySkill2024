@@ -15,8 +15,8 @@ MonoBehaviour:
   questionCategory: 3
   statementQuestion: "\xBFCu\xE1l es el animal vertebrado m\xE1s peque\xF1o del mundo?"
   options:
-  - Rana Paedophryne amauensis
   - "Camale\xF3n Brookesia"
   - "Murci\xE9lago nariz cerdo kitti"
   - Caballito de mar
-  correctAnswer: 0
+  - Rana Paedophryne amauensis
+  correctAnswer: 4
