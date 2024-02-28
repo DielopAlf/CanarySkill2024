@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_7
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
+  statementQuestion: "\xBFQu\xE9 autor fue muy reconocido por sus f\xE1bulas? "
   options:
-  - 
-  - 
-  - 
-  - 
-  correctAnswer: 0
+  - Esopo
+  - Marco Aurelio
+  - "Plat\xF3n"
+  - "Arqu\xEDmedes"
+  correctAnswer: 1

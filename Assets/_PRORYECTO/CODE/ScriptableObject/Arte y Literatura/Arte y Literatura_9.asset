@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_9
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
+  statementQuestion: "\xBFQui\xE9n pint\xF3 \u201CLas Meninas\u201D? "
   options:
-  - 
-  - 
-  - 
-  - 
-  correctAnswer: 0
+  - Diego Velazlquez
+  - Darth Vader
+  - Diego Maradona
+  - Daniel Cervantez
+  correctAnswer: 1

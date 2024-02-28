@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Arte y Literatura_12
   m_EditorClassIdentifier: 
   questionCategory: 1
-  statementQuestion: 
+  statementQuestion: "\xBFQui\xE9n pint\xF3 \u201CEl nacimiento de Venus\u201D? "
   options:
-  - 
-  - 
-  - 
-  - 
-  correctAnswer: 0
+  - 'Leonardo De Venecia '
+  - Sandro Botticelli
+  - Joe Biden
+  - Obama
+  correctAnswer: 2
