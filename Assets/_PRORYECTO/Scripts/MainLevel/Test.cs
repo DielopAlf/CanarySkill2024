@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class Test : MonoBehaviour
 {
-    private static GameController instance;
-    public static GameController Instance { get { return instance; } }
+    private static Test instance;
+    public static Test Instance { get { return instance; } }
 
     #region Private Fields
     private int randomCategory;
@@ -14,8 +14,10 @@ public class GameController : MonoBehaviour
     private string categoryStr;
     [SerializeField] private GameObject questionText;
     [SerializeField] private GameObject[] optionsText;
-    [SerializeField]private QuestionManager questionManager;
-    [SerializeField]private QuestionBase currentQuestion;
+    [SerializeField] private QuestionManager questionManager;
+    [SerializeField] private QuestionBase currentQuestion;
+
+    public bool newQuestion;
     #endregion
     #region Unity Methods
     private void Awake()
@@ -29,14 +31,14 @@ public class GameController : MonoBehaviour
     void Start()
     {
         questionManager = GetComponent<QuestionManager>();
-        
+
         ShowNewQuestion();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     #endregion
     #region Public Methods
@@ -59,6 +61,17 @@ public class GameController : MonoBehaviour
             optionsText[i].GetComponent<TextMeshPro>().text = currentQuestion.options[i].ToString();
         }
     }
+    public void Animation()
+    {
+        StartCoroutine(delayAfterRound());
+        IEnumerator delayAfterRound()
+        {
+            newQuestion = true;
+            yield return new WaitForSeconds(1.5f);
+            newQuestion = false;
+        }
+    }
+
     public void SelectAnswer(int index)
     {
         if (currentQuestion == null)
@@ -81,7 +94,8 @@ public class GameController : MonoBehaviour
             //como activar un sistema de pariculas
             //un sonito, etc
         }
-        
+
+        Animation();
         //Mostrar nueva Pregunta
         ShowNewQuestion();
     }

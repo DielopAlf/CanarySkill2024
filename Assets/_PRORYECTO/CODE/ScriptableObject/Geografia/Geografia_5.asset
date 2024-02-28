@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Geografia_5
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: "5\xBFC\xF3mo se llama la cordillera que separa Espa\xF1a de
+  statementQuestion: "\xBFC\xF3mo se llama la cordillera que separa Espa\xF1a de
     Europa? "
   options:
   - Everest

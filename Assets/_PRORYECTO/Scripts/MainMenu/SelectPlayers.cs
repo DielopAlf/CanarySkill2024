@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SelectPlayers : MonoBehaviour
 {
@@ -20,4 +21,11 @@ public class SelectPlayers : MonoBehaviour
     {
         Debug.Log("Partida para 4 jugadores");
     }
+
+    // Función para cargar directamente el juego, saltando la pantalla de selección de número de 
+    // jugadores
+    //public void DirectLoad()
+    //{
+    //    SceneManager.LoadScene("NOMBRE DE LA ESCENA");
+    //}
 }

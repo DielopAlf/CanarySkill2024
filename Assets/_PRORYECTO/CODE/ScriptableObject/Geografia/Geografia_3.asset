@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Geografia_3
   m_EditorClassIdentifier: 
   questionCategory: 0
-  statementQuestion: "3\xBFEn qu\xE9 provincias de Espa\xF1a se habla el Catal\xE1n? "
+  statementQuestion: "\xBFEn qu\xE9 provincias de Espa\xF1a se habla el Catal\xE1n? "
   options:
   - Barcelona
   - "Catalu\xF1a"

@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour
     public float timerEnd = 10;
     public float timerStart = 3;
     float end, start;
-    public bool rondaTerminada, tiempoTerminado;
+
+    //public bool tiempoTerminado;
+
     [SerializeField]
     GameObject canvas;
     /*[SerializeField]
@@ -18,13 +20,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        //Variables ajustables desde el editor para el temporizador y delay antes de la siguiente ronda:
         end = timerEnd; start = timerStart;
         /*Instantiate(cartaPreguntaCopia);
         Instantiate(cartaRespuestaCopia);*/  
     }
     private void Awake()
     {
-
         if (instance == null)
         {
             instance = this;
@@ -32,24 +34,29 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(end);
+        //Temporizador básico para la partida:
+        //Debug.Log(end);
         if (end > 0)
         {
             canvas.SetActive(true);
             end -= Time.deltaTime;
         }
+        //Al finalizar el temporizador, empieza a contar el temporizador del delay:
         if (end <= 0) 
         {
             start -= Time.deltaTime;
             canvas.SetActive(false);
-            tiempoTerminado = true;
+            Test.Instance.Animation();
+            //tiempoTerminado = true;
         }
+        //Al acabar el delay, comienza la siguiente ronda:
         if (start <= 0)
         {
-            tiempoTerminado = false;
+            Test.Instance.ShowNewQuestion();
+            //tiempoTerminado = false;
             end = timerEnd;
             start = timerStart;
+            //GameController.Instance.ShowNewQuestion();
         }
     }
-
 }
