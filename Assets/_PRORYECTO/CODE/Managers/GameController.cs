@@ -32,7 +32,8 @@ public class GameController : MonoBehaviour
     #region Public Methods
     public void ShowNewQuestion()
     {
-        currentQuestion = questionManager.GetRandomQuestion(currentQuestion.questionCategory.ToString());
+        QuestionsCategories cat = (QuestionsCategories)(Random.Range(0, 5));
+        currentQuestion = questionManager.GetRandomQuestion(cat.ToString());
         category = currentQuestion.questionCategory;
         categoryStr = category.ToString();
 
@@ -42,7 +43,7 @@ public class GameController : MonoBehaviour
             return;
         }
 
-        questionText.text = currentQuestion.question.ToString();
+        questionText.text = currentQuestion.statementQuestion;
         for (int i = 0; i < currentQuestion.options.Length; i++)
         {
             optionsText[i].text = currentQuestion.options[i].ToString();

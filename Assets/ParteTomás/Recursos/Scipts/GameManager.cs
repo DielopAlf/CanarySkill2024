@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         /*Instantiate(cartaPreguntaCopia);
         Instantiate(cartaRespuestaCopia);*/  
     }
-        private void Awake()
+    private void Awake()
     {
 
         if (instance == null)
