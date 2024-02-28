@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 
-public class Test : MonoBehaviour
+public class GameController_backUp : MonoBehaviour
 {
-    private static Test instance;
-    public static Test Instance { get { return instance; } }
+   // private static GameController instance;
+    //public static GameController Instance { get { return instance; } }
 
     #region Private Fields
     private int randomCategory;
@@ -14,31 +14,29 @@ public class Test : MonoBehaviour
     private string categoryStr;
     [SerializeField] private GameObject questionText;
     [SerializeField] private GameObject[] optionsText;
-    [SerializeField] private QuestionManager questionManager;
-    [SerializeField] private QuestionBase currentQuestion;
-
-    public bool newQuestion;
+    [SerializeField]private QuestionManager questionManager;
+    [SerializeField]private QuestionBase currentQuestion;
     #endregion
     #region Unity Methods
     private void Awake()
     {
-        if (instance == null)
+        /*if (instance == null)
         {
             instance = this;
-        }
+        }*/
     }
     // Start is called before the first frame update
     void Start()
     {
         questionManager = GetComponent<QuestionManager>();
-
+        
         ShowNewQuestion();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     #endregion
     #region Public Methods
@@ -61,17 +59,6 @@ public class Test : MonoBehaviour
             optionsText[i].GetComponent<TextMeshPro>().text = currentQuestion.options[i].ToString();
         }
     }
-    public void Animation()
-    {
-        StartCoroutine(delayAfterRound());
-        IEnumerator delayAfterRound()
-        {
-            newQuestion = true;
-            yield return new WaitForSeconds(1.5f);
-            newQuestion = false;
-        }
-    }
-
     public void SelectAnswer(int index)
     {
         if (currentQuestion == null)
@@ -94,8 +81,7 @@ public class Test : MonoBehaviour
             //como activar un sistema de pariculas
             //un sonito, etc
         }
-
-        Animation();
+        
         //Mostrar nueva Pregunta
         ShowNewQuestion();
     }

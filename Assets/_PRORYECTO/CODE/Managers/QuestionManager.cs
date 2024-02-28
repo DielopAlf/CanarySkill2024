@@ -12,13 +12,10 @@ public class QuestionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Inicializador de preguntas, se pueden agregar mas preguntas desde un archivo o base de datos.
-        //questions = new List<QuestionBase>(Resources.LoadAll<QuestionBase>("Questions"));
-
-        //new Question("En qué isla nos encontramos?", new string[] { "Madriz", "Mallorca", "Gran Canarias", "Tenerife" }, 4);
-
-        // Agregar más preguntas
+        LoadQuestions();
     }
+
+   
 
     // Update is called once per frame
     void Update()
@@ -26,18 +23,38 @@ public class QuestionManager : MonoBehaviour
         
     }
     #endregion
-    #region Public Methods
-    public QuestionBase GetRandomQuestion(string category)
+    #region Private Methods
+    private void LoadQuestions()
     {
-        List<QuestionBase> questionInCategory = questions.FindAll(question => question.questionCategory.ToString() == category);
-        if (questionInCategory.Count == 0)
+        if (questions == null)
         {
-            Debug.LogWarning("No hay preguntas en la categoria " + category);
+            questions = new List<QuestionBase>();
+
+            string[] folders = new string[] { "Arte_Literatura", "Ciencia_Naturaleza",
+            "Deportes_Ocio", "Entretenimiento", "Geografía", "Historia" };
+
+            foreach (var folder in folders)
+            {
+                QuestionBase[] questionCategory = Resources.LoadAll<QuestionBase>(folder);//Nombre de la carpeta
+                questions.AddRange(questionCategory);
+            }
+        }
+    }
+    #endregion
+    #region Public Methods
+    public QuestionBase GetRandomQuestion()
+    {        
+        QuestionBase questionToReturn;
+
+        if (questions == null || questions.Count == 0)
+        {
+            Debug.LogWarning("No hay preguntas disponibles.");
             return null;
         }
 
-        int index = Random.Range(0, questionInCategory.Count);
-        return questionInCategory[index];
+        int index = Random.Range(0, questions.Count);
+        questionToReturn = questions[index];
+        return questionToReturn;
     }
     #endregion
 }

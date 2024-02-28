@@ -2,17 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum QuestionsCategories
-{
-    GEOGRAFIA,
-    ARTE_Y_LITERATURA,
-    HISTORIA,
-    CIENCIAS_Y_NATURALEZA,
-    DEPORTE_Y_OCIO,
-    ENTRETENIMIENTO,
-    DEFAULT
-}
-
 public class QuestionsDisplay : MonoBehaviour
 {
     #region Instance

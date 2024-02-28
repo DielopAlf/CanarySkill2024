@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -14,8 +15,27 @@ public class GameController : MonoBehaviour
     private string categoryStr;
     [SerializeField] private GameObject questionText;
     [SerializeField] private GameObject[] optionsText;
+    [SerializeField] private Button[] optionsButtons;
     [SerializeField]private QuestionManager questionManager;
     [SerializeField]private QuestionBase currentQuestion;
+    #endregion
+    #region Public Field
+    public Button[] OptionsButtons { get { return optionsButtons; } }
+    public bool CheckAnswer(int index)
+    {
+        if (currentQuestion == null)
+        {
+            Debug.LogError("No hay pregunta actual para comprobar la respuesta.");
+            return false;
+        }
+
+        //Obetenemos el index de la opcion correcta
+        int indexCorrectAnswer = currentQuestion.correctAnswer;
+
+        //Comprobamos si la opcion seleccionada es la correcta
+        bool isCorrect = (index == indexCorrectAnswer);
+        return isCorrect;
+    }
     #endregion
     #region Unity Methods
     private void Awake()
@@ -39,24 +59,53 @@ public class GameController : MonoBehaviour
         
     }
     #endregion
+    #region Private MEthods
+    private void ShuffleOptions(string[] options)
+    {
+        // Baraja el arreglo de opciones usando el algoritmo de Fisher-Yates
+        for (int i = 0; i < options.Length; i++)
+        {
+            int randomIndex = Random.Range(i, options.Length);
+            string temp = options[randomIndex];
+            options[randomIndex] = options[i];
+            options[i] = temp;
+        }
+    }
+    #endregion
     #region Public Methods
+   
     public void ShowNewQuestion()
     {
-        QuestionsCategories cat = (QuestionsCategories)(Random.Range(0, 5));
-        currentQuestion = questionManager.GetRandomQuestion(cat.ToString());
-        category = currentQuestion.questionCategory;
-        categoryStr = category.ToString();
+        currentQuestion = questionManager.GetRandomQuestion();
 
         if (currentQuestion == null)
         {
-            Debug.LogError("No se Ppudo obtener una pregunta.");
+            Debug.LogError("No se pudo obtener una pregunta.");
             return;
         }
+        // Guarda el índice de la respuesta correcta
+        int correctAnswerIndex = currentQuestion.correctAnswer;
 
+        // Barajamos las opciones de respuesta
+        ShuffleOptions(currentQuestion.options);
+
+        // Muestra la pregunta y las opciones en la interfaz de usuario
         questionText.GetComponent<TextMeshPro>().text = currentQuestion.statementQuestion;
+
         for (int i = 0; i < currentQuestion.options.Length; i++)
         {
             optionsText[i].GetComponent<TextMeshPro>().text = currentQuestion.options[i].ToString();
+
+            // Identificamos la respuesta correcta y marca el botón correspondiente
+            if (i == correctAnswerIndex)
+            {
+                // Marca el botón de la respuesta correcta (opcional)
+                optionsButtons[i].GetComponent<OptionButton>().SetupOption(currentQuestion.options[i].ToString(), i);
+            }
+            else
+            {
+                // Puedes realizar otras acciones para indicar que esta no es la respuesta correcta
+            }
         }
     }
     public void SelectAnswer(int index)
