@@ -25,6 +25,10 @@ public class Test : MonoBehaviour
     int currentplayerIndex = 1;
     int playersPlaying;
     int rondas = 1;
+
+    //Debug rondas y jugador en texto
+    [SerializeField]
+    TextMeshProUGUI ronda, jugador;
     private void Awake()
     {
         if (instance == null)
@@ -47,7 +51,8 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        ronda.text = "Ronda: " + rondas;
+        jugador.text = "Jugador: " + currentplayerIndex;
     }
     #endregion
     #region Public Methods

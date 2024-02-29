@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: "Assets/_PRORYECTO/LEVEL/Scenes/Fusi\xF3n.unity"
     guid: e3a8c8c8b8b356848a5cb4f469184498
   - enabled: 1
-    path: Assets/_PRORYECTO/Scenes/MainMenu.unity
+    path: Assets/_PRORYECTO/LEVEL/Scenes/MainMenu.unity
     guid: 34ca05859d763ef46bbea16d3056481d
   m_configObjects: {}
