@@ -6,10 +6,13 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     #region Private Fields
+    [SerializeField] private HudManager hudManager;
+    [SerializeField] private int numberOfPlayer;
     [SerializeField] private int[] scores;
     #endregion
     #region Public Fields
     public int currentPlayer = 0;
+    public int NumberOfPlayers { get { return NumberOfPlayers; } }
     #endregion
     #region Unity Methods
     // Start is called before the first frame update
@@ -21,19 +24,16 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentPlayer > numberOfPlayer - 1) { currentPlayer = 0; }
     }
     #endregion
     #region Public Methods
-    public void IncorrectAnswer(int index, int amount)
+    public void IncorrectAnswer(int index)
     {
-        for (int i = 0; i < scores.Length; i++)
-        {
-            if (scores[index] == i)
-            {
-                scores[i] -= amount;
-            }
-        }
+        int score = GetScore(index);
+
+        scores[index]--;
+        hudManager.UpdateScore(scores[index]);
     }
     public int GetScore(int index)
     {

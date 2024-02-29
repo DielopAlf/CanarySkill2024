@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class HudManager : MonoBehaviour
 {
@@ -19,7 +17,7 @@ public class HudManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playersCount = scoreManager.NumberOfPlayers;
     }
 
     // Update is called once per frame
@@ -34,11 +32,12 @@ public class HudManager : MonoBehaviour
     #region Public Methods
     public void UpdateScore(int index)
     {
+        currentPlayer = index;
         for (int i = 0; i < scoreTexts.Length; i++)
         {
             if (currentPlayer == i)
             {
-                scoreTexts[index].text = scoreManager.GetScore(index).ToString().PadLeft(3, '0');
+                scoreTexts[index].text = scoreManager.GetScore(index).ToString();
             }
         }
     }

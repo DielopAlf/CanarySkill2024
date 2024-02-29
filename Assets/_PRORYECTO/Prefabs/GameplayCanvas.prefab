@@ -1376,7 +1376,7 @@ GameObject:
   - component: {fileID: 2002479746685045097}
   - component: {fileID: 5095618410082033505}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: D_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 1774085550320977548}
   - component: {fileID: 8399806384969172914}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoBotonRespD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2039,7 +2039,7 @@ GameObject:
   - component: {fileID: 6124313463473999281}
   - component: {fileID: 9051599635064032164}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoBotonRespB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2575,7 +2575,7 @@ GameObject:
   - component: {fileID: 356906129725691897}
   - component: {fileID: 8582686759032471923}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoBotonRespC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2800,7 +2800,7 @@ GameObject:
   - component: {fileID: 1407278501298403078}
   - component: {fileID: 3730690727119434686}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: C_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3419,7 +3419,7 @@ GameObject:
   - component: {fileID: 7194432234894569514}
   - component: {fileID: 4836885817995760565}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoBotonRespA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3912,7 +3912,7 @@ GameObject:
   - component: {fileID: 4332122277902267556}
   - component: {fileID: 7905998769877912535}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: A_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5092,7 +5092,7 @@ GameObject:
   - component: {fileID: 3188949395535984700}
   - component: {fileID: 2638521018443820699}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: B_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

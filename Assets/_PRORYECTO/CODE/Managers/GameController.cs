@@ -12,13 +12,14 @@ public class GameController : MonoBehaviour
     public static GameController Instance { get { return instance; } }
     #endregion
     #region Private Fields
+    [SerializeField] private GameObject correctParticle;
+    [SerializeField] private ScoreManager scoreManager;
     private int randomCategory;
     [SerializeField] private QuestionsCategories category;
     private string categoryStr;
     [SerializeField] private GameObject questionText;
     [SerializeField] private GameObject[] optionsText;
     [SerializeField] private Button[] optionsButtons;
-    [SerializeField] private GameObject[] letters;
     [SerializeField] private ProceduralImage[] lettersOptBg;
     [SerializeField]private QuestionManager questionManager;
     [SerializeField]private QuestionBase currentQuestion;
@@ -111,7 +112,6 @@ public class GameController : MonoBehaviour
         {
             optionsText[i].GetComponent<TextMeshProUGUI>().text = currentQuestion.options[i].ToString();
             optionsText[i].GetComponent<TextMeshProUGUI>().color = currentQuestion.categoryColor;
-            letters[i].GetComponent<TextMeshProUGUI>().color = textColor;
             lettersOptBg[i].color = currentQuestion.categoryColor;
 
             // Identificamos la respuesta correcta y marca el botón correspondiente
@@ -144,12 +144,16 @@ public class GameController : MonoBehaviour
             //Logica adicional a la respuesta correcta
             //como activar un sistema de pariculas
             //un sonito, etc
+            correctParticle.GetComponent<ParticleSystem>().Play();
+            scoreManager.currentPlayer++;
             optionsButtons[index].GetComponent<ProceduralImage>().color = successColor;
             optionsButtons[index].GetComponentInChildren<TextMeshProUGUI>().color = textColor;
         }
         else if(index != currentQuestion.correctAnswer)
         {
             Debug.Log("La respuesta correcta era: " + currentQuestion.options[currentQuestion.correctAnswer]);
+            scoreManager.IncorrectAnswer(scoreManager.currentPlayer);
+            scoreManager.currentPlayer++;
             //Logica adicional a la respuesta incorrecta
             //como activar un sistema de pariculas
             //un sonito, etc

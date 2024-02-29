@@ -17,7 +17,7 @@ MonoBehaviour:
   statementQuestion: "\xBFCual es el jugador de baloncesto con m\xE1s anillos? "
   options:
   - Sam Jones
-  - Michael Jordan
-  - Bill Russell
   - Tom heinsohn
+  - Bill Russell
+  - Michael Jordan
   correctAnswer: 2
