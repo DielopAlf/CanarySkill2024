@@ -17,7 +17,7 @@ MonoBehaviour:
   statementQuestion: "\xBFQui\xE9n pint\xF3 \u201CGuernica\u201D? "
   options:
   - Margot Robbie
-  - Pablo Picasso
   - Malena
   - El propio Guernica
-  correctAnswer: 2
+  - Pablo Picasso
+  correctAnswer: 3

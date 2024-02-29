@@ -17,8 +17,8 @@ MonoBehaviour:
   statementQuestion: "\xBFCu\xE1ntas islas componen a fecha 2024 el archipi\xE9lago
     Canario? "
   options:
-  - 50
-  - No tiene
-  - 25
-  - 100
-  correctAnswer: 1
+  - 8
+  - 15
+  - 10
+  - 7
+  correctAnswer: 0
