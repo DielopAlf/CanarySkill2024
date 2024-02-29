@@ -30,16 +30,10 @@ public class HudManager : MonoBehaviour
 
     #endregion
     #region Public Methods
-    public void UpdateScore(int index)
+    public void UpdateScore()
     {
-        currentPlayer = index;
-        for (int i = 0; i < scoreTexts.Length; i++)
-        {
-            if (currentPlayer == i)
-            {
-                scoreTexts[index].text = scoreManager.GetScore(index).ToString();
-            }
-        }
+        currentPlayer = scoreManager.currentPlayer;
+        scoreTexts[currentPlayer].text = scoreManager.GetScore(currentPlayer).ToString();
     }
     #endregion
 }

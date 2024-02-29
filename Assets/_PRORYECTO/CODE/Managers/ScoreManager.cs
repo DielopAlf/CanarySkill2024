@@ -33,7 +33,7 @@ public class ScoreManager : MonoBehaviour
         int score = GetScore(index);
 
         scores[index]--;
-        hudManager.UpdateScore(scores[index]);
+        hudManager.UpdateScore();
     }
     public int GetScore(int index)
     {

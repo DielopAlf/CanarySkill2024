@@ -10266,7 +10266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 429895287}
   m_Layer: 0
-  m_Name: soundcontroller
+  m_Name: SoundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36765,11 +36765,11 @@ SceneRoots:
   - {fileID: 1410276861}
   - {fileID: 7710383928150775098}
   - {fileID: 226637830834916908}
+  - {fileID: 429895287}
   - {fileID: 2012926349}
   - {fileID: 272616577}
   - {fileID: 1130705473}
   - {fileID: 367580181}
   - {fileID: 1640316608}
-  - {fileID: 429895287}
   - {fileID: 1831277752}
   - {fileID: 164116232}
