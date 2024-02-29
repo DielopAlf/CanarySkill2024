@@ -10280,7 +10280,7 @@ GameObject:
   - component: {fileID: 489290193}
   m_Layer: 5
   m_Name: PlayerSlot (3)
-  m_TagString: Untagged
+  m_TagString: Escore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26846,7 +26846,7 @@ GameObject:
   - component: {fileID: 1762467909}
   m_Layer: 5
   m_Name: PlayerSlot
-  m_TagString: Untagged
+  m_TagString: Escore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26895,6 +26895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7921c69af2f3557419de2dbcf8c97cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escores: []
+  maxrounds: 20
   ronda: {fileID: 1188803517}
   jugador: {fileID: 1390333100}
 --- !u!1 &1810709695 stripped
@@ -31836,7 +31838,7 @@ GameObject:
   - component: {fileID: 2006705366}
   m_Layer: 5
   m_Name: PlayerSlot (2)
-  m_TagString: Untagged
+  m_TagString: Escore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32070,7 +32072,7 @@ GameObject:
   - component: {fileID: 2139991879}
   m_Layer: 5
   m_Name: PlayerSlot (1)
-  m_TagString: Untagged
+  m_TagString: Escore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

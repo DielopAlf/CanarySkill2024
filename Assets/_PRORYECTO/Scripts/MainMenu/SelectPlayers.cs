@@ -30,6 +30,6 @@ public class SelectPlayers : MonoBehaviour
     // jugadores
     public void DirectLoad()
     {
-        SceneManager.LoadScene("Fusión");
+        SceneManager.LoadScene("MechanicsScenes_Custom");
     }
 }
