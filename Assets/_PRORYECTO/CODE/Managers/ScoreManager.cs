@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     #endregion
     #region Public Fields
     public int currentPlayer = 0;
-    public int NumberOfPlayers { get { return NumberOfPlayers; } }
+    public int NumberOfPlayers { get { return numberOfPlayer; } }
     #endregion
     #region Unity Methods
     // Start is called before the first frame update

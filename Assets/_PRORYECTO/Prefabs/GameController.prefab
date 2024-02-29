@@ -179,6 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f05bea0a59a27d4c889882f8a77f950, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctParticle: {fileID: 0}
+  scoreManager: {fileID: 0}
   category: 0
   questionText: {fileID: 0}
   optionsText:
@@ -191,21 +193,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  letters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   lettersOptBg:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   questionManager: {fileID: 8447469871690784618}
-  currentQuestion: {fileID: 0}
+  currentQuestion: {fileID: 11400000, guid: ff2d3008dbc8eb247a30215284e3f885, type: 2}
   failColor: {r: 0.8113208, g: 0.036347516, b: 0, a: 1}
   successColor: {r: 0.07030493, g: 0.8490566, b: 0.04405483, a: 1}
   textColor: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
+  testInt: 
 --- !u!114 &2202995593132661414
 MonoBehaviour:
   m_ObjectHideFlags: 0
