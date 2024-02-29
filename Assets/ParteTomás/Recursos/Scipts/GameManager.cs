@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
     private static GameManager instance;
     public static GameManager Instance { get { return instance; } }
 
     public float timerEnd = 10;
     public float timerStart = 3;
-    float end, start;
+    public float delayInput = 1;
+    public float end, start, delay;
+    bool startdelay = false;
 
     //public bool tiempoTerminado;
 
@@ -21,7 +24,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         //Variables ajustables desde el editor para el temporizador y delay antes de la siguiente ronda:
-        end = timerEnd; start = timerStart;
+        end = timerEnd; start = timerStart; delay = delayInput; 
         /*Instantiate(cartaPreguntaCopia);
         Instantiate(cartaRespuestaCopia);*/  
     }
@@ -38,11 +41,10 @@ public class GameManager : MonoBehaviour
         //Debug.Log(end);
         if (end > 0)
         {
-            canvas.SetActive(true);
             end -= Time.deltaTime;
         }
         //Al finalizar el temporizador, empieza a contar el temporizador del delay:
-        if (end <= 0) 
+        if (end <= 0 || start != timerStart) 
         {
             start -= Time.deltaTime;
             canvas.SetActive(false);
@@ -56,7 +58,18 @@ public class GameManager : MonoBehaviour
             //tiempoTerminado = false;
             end = timerEnd;
             start = timerStart;
+            startdelay = true;
             //GameController.Instance.ShowNewQuestion();
+        }
+        if (startdelay == true)
+        {
+            delay -= Time.deltaTime;
+        }
+        if (delay <= 0)
+        {
+            startdelay = false;
+            delay = delayInput;
+            canvas.SetActive(true);
         }
     }
 }

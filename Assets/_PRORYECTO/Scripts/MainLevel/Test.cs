@@ -20,6 +20,11 @@ public class Test : MonoBehaviour
     public bool newQuestion;
     #endregion
     #region Unity Methods
+
+    //Gameplay por turnos:
+    int currentplayerIndex = 1;
+    int playersPlaying;
+    int rondas = 1;
     private void Awake()
     {
         if (instance == null)
@@ -30,6 +35,10 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playersPlaying = PlayerPrefs.GetInt("jugadores");
+
+        Debug.Log(PlayerPrefs.GetInt("jugadores"));
+
         questionManager = GetComponent<QuestionManager>();
 
         ShowNewQuestion();
@@ -74,6 +83,12 @@ public class Test : MonoBehaviour
 
     public void SelectAnswer(int index)
     {
+        if (currentplayerIndex != PlayerPrefs.GetInt("jugadores") + 1)
+        {
+            currentplayerIndex++;
+        }
+        GameManager.Instance.end = GameManager.Instance.timerEnd;
+        StartCoroutine(IniciarDelay());
         if (currentQuestion == null)
         {
             Debug.LogError("No hay pregunta actual.");
@@ -89,7 +104,7 @@ public class Test : MonoBehaviour
         }
         else
         {
-            Debug.Log("La respuesta correcta era: " + currentQuestion.options[currentQuestion.correctAnswer]);
+            //Debug.Log("La respuesta correcta era: " + currentQuestion.options[currentQuestion.correctAnswer]);
             //Logica adicional a la respuesta incorrecta
             //como activar un sistema de pariculas
             //un sonito, etc
@@ -97,7 +112,19 @@ public class Test : MonoBehaviour
 
         Animation();
         //Mostrar nueva Pregunta
-        ShowNewQuestion();
+        //ShowNewQuestion();
+        if (currentplayerIndex == PlayerPrefs.GetInt("jugadores") + 1)
+        {
+            currentplayerIndex = 1;
+            rondas++;
+        }
+        Debug.Log("Jugador actual: " + currentplayerIndex);
+        Debug.Log("Ronda actual: " + rondas);
+    }
+    IEnumerator IniciarDelay()
+    {
+        GameManager.Instance.start -= Time.deltaTime;
+        yield return null;
     }
     #endregion
 }
