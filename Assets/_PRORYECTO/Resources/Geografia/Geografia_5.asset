@@ -17,8 +17,8 @@ MonoBehaviour:
   statementQuestion: "\xBFC\xF3mo se llama la cordillera que separa Espa\xF1a de
     Europa? "
   options:
-  - Everest
+  - Los Alpes
   - Los Pirineos
-  - Teide
-  - "El gran ca\xF1\xF3n"
+  - El Himalaya
+  - El Atlas
   correctAnswer: 1

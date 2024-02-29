@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 0
   categoryColor: {r: 0.03137255, g: 0.6901961, b: 0.95294124, a: 1}
-  statementQuestion: "\xBFCu\xE1ntos continentes hay seg\xFAn la mayor\xEDa del mundo? "
+  statementQuestion: "\xBFCu\xE1ntos continentes hay en el planeta? "
   options:
   - 6
   - 7

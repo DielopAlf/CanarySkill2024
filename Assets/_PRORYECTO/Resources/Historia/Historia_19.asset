@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 2
   categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
-  statementQuestion: "\xBFHace cu\xE1nto se construy\xF3 la Gran pir\xE1mide de Keops? "
+  statementQuestion: "\xBFCu\xE1ndo se construy\xF3 la Gran Pir\xE1mide de Giza? "
   options:
-  - "60.000 a\xF1os"
-  - "4.500 a\xF1os"
-  - "10.000 a\xF1os"
-  - "6.000 a\xF1os"
+  - "Hace 60.000 a\xF1os"
+  - "Hace 4.500 a\xF1os"
+  - "Hace 10.000 a\xF1os"
+  - "Hace 6.000 a\xF1os"
   correctAnswer: 1

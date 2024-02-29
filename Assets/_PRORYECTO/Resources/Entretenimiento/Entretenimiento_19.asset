@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 5
   categoryColor: {r: 0.9490197, g: 0.5568628, b: 0.69803923, a: 1}
-  statementQuestion: "\xBFCu\xE1l fue la primera pel\xEDcula de Quentin Tarantino? "
+  statementQuestion: "\xBFCu\xE1l fue la primera pel\xEDcula de director Quentin
+    Tarantino? "
   options:
   - Kill Bill
   - Pulp Fiction

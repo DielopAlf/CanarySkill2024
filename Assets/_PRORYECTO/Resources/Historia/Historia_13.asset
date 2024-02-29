@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 2
   categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
-  statementQuestion: "\xBFEn qu\xE9 a\xF1o fue el fin del imperio romano? "
+  statementQuestion: "\xBFEn qu\xE9 a\xF1o cay\xF3 el imperio romano?"
   options:
   - 476 d. C
   - 300 d. C

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 2
   categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
-  statementQuestion: "\xBFCu\xE1l fue el primer presidente de los Estados Unidos
+  statementQuestion: "\xBFQui\xE9n fue el primer presidente de los Estados Unidos
     de Am\xE9rica? "
   options:
-  - Abraham Lincon
-  - John F Kennedy
+  - Abraham Lincoln
+  - John F. Kennedy
   - Bill Clinton
   - George Washington
   correctAnswer: 3

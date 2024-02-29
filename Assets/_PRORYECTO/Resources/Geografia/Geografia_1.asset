@@ -17,7 +17,7 @@ MonoBehaviour:
   statementQuestion: "\xBFCu\xE1ntas provincias tiene Espa\xF1a?"
   options:
   - 50
-  - No tiene
+  - 12
   - 25
   - 100
   correctAnswer: 0

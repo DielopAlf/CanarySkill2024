@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 2
   categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
-  statementQuestion: "\xBFQu\xE9 a\xF1o inici\xF3 la guerra civil Espa\xF1ola? "
+  statementQuestion: "\xBFEn qu\xE9 a\xF1o inici\xF3 la Guerra civil espa\xF1ola? "
   options:
   - 1934
   - 1930

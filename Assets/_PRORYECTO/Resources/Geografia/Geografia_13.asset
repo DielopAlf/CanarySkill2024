@@ -17,7 +17,7 @@ MonoBehaviour:
   statementQuestion: "\xBFCu\xE1l es el continente m\xE1s grande? "
   options:
   - "Espa\xF1a"
-  - Atlantida
+  - "Ant\xE1rtida"
   - Asia
   - "Am\xE9rica"
   correctAnswer: 2
