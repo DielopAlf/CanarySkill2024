@@ -16,8 +16,8 @@ MonoBehaviour:
   categoryColor: {r: 0.9490197, g: 0.83921576, b: 0.23529413, a: 1}
   statementQuestion: "\xBFQui\xE9n escribi\xF3 \u201CPinocho\u201D? "
   options:
-  - Hans Crinstian Andersen
   - Charles Perrault
+  - Hans Crinstian Andersen
   - Carlos Collodi
   - Lewis Carrol
   correctAnswer: 2

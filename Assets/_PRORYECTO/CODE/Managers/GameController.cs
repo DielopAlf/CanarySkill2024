@@ -7,9 +7,10 @@ using UnityEngine.UI.ProceduralImage;
 
 public class GameController : MonoBehaviour
 {
+    #region Instance
     private static GameController instance;
     public static GameController Instance { get { return instance; } }
-
+    #endregion
     #region Private Fields
     private int randomCategory;
     [SerializeField] private QuestionsCategories category;
@@ -44,6 +45,7 @@ public class GameController : MonoBehaviour
         bool isCorrect = (index == indexCorrectAnswer);
         return isCorrect;
     }
+    public string testInt;
     #endregion
     #region Unity Methods
     private void Awake()
@@ -64,10 +66,10 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(testInt);
     }
     #endregion
-    #region Private MEthods
+    #region Private Methods
     private void ShuffleOptions(string[] options)
     {
         // Baraja el arreglo de opciones usando el algoritmo de Fisher-Yates
@@ -80,11 +82,12 @@ public class GameController : MonoBehaviour
         }
     }
     #endregion
-    #region Public Methods
-   
+    #region Public Methods   
     public void ShowNewQuestion()
     {
         currentQuestion = questionManager.GetRandomQuestion();
+        testInt = currentQuestion.options[currentQuestion.correctAnswer];
+        Debug.Log(testInt);
 
         if (currentQuestion == null)
         {
@@ -144,7 +147,7 @@ public class GameController : MonoBehaviour
             optionsButtons[index].GetComponent<ProceduralImage>().color = successColor;
             optionsButtons[index].GetComponentInChildren<TextMeshProUGUI>().color = textColor;
         }
-        else
+        else if(index != currentQuestion.correctAnswer)
         {
             Debug.Log("La respuesta correcta era: " + currentQuestion.options[currentQuestion.correctAnswer]);
             //Logica adicional a la respuesta incorrecta
