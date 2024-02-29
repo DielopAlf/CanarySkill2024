@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 5
   categoryColor: {r: 0.9490197, g: 0.5568628, b: 0.69803923, a: 1}
-  statementQuestion: "\xBFEn qu\xE9 a\xF1o sali\xF3 Star wars? "
+  statementQuestion: "\xBFEn qu\xE9 a\xF1o sali\xF3 la pel\xEDcula \"Star Wars\"? "
   options:
   - 1980
   - 1970

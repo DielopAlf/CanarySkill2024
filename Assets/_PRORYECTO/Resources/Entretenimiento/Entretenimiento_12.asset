@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 5
   categoryColor: {r: 0.9490197, g: 0.5568628, b: 0.69803923, a: 1}
-  statementQuestion: "\xBFCu\xE1l fue el primer juego de Super Mario en 3D? "
+  statementQuestion: "\xBFCu\xE1l fue el primer juego de la franquicia Mario en 3D? "
   options:
   - 'Super Mario 3D Land '
   - Super Mario 3D World

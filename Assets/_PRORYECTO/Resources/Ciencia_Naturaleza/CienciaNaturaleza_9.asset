@@ -16,7 +16,7 @@ MonoBehaviour:
   categoryColor: {r: 0.3019608, g: 0.6509804, b: 0.2901961, a: 1}
   statementQuestion: "\xBFC\xF3mo se llama un animal que come de todo?"
   options:
-  - "omn\xEDvoro"
+  - "Omn\xEDvoro"
   - "Carn\xEDvoro"
   - Vegetariano
   - "Herb\xEDvoro"

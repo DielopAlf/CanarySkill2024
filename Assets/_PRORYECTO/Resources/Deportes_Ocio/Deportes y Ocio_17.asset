@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 4
   categoryColor: {r: 0.9490197, g: 0.5294118, b: 0.015686275, a: 1}
-  statementQuestion: "\xBFcomo se llama la empresa encargada de las graficas ryzen? "
+  statementQuestion: "\xBFC\xF3mo se llama la empresa que fabrica las tarjetas gr\xE1ficas
+    Ryzen? "
   options:
   - Sony
   - Intel

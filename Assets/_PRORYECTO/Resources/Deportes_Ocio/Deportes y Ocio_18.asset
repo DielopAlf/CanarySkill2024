@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 4
   categoryColor: {r: 0.9490197, g: 0.5294118, b: 0.015686275, a: 1}
-  statementQuestion: "\xBFCual fue el primer jugador de futbol en ganar un balon
-    de oro?"
+  statementQuestion: "\xBFQui\xE9n fue el primer jugador de f\xFAtbol en ganar un
+    bal\xF3n de oro?"
   options:
   - Iker Casillas
   - "Andr\xE9s Iniesta"

@@ -17,8 +17,8 @@ MonoBehaviour:
   statementQuestion: "\xBFCual es la frase m\xE1s emblem\xE1tica del villano Darth
     Vader? "
   options:
-  - "Que la fuerza te acompa\xF1e"
-  - "Hasta el infinito y m\xE1s all\xE1"
-  - 'Francamente, querida, me importa un bledo '
-  - Yo soy tu padre
+  - "\"Que la fuerza te acompa\xF1e\""
+  - "\"\xA1Hasta el infinito y m\xE1s all\xE1!\""
+  - '"Francamente, querida, me importa un bledo"'
+  - '"No, Yo soy tu padre"'
   correctAnswer: 3

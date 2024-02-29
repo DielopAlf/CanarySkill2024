@@ -16,8 +16,8 @@ MonoBehaviour:
   categoryColor: {r: 0.3019608, g: 0.6509804, b: 0.2901961, a: 1}
   statementQuestion: "\xBFDe qu\xE9 \xE1tomos est\xE1 compuesto el agua?"
   options:
-  - "2 ox\xEDgeno y 1 helio"
-  - "2 helio y 1 ox\xEDgeno"
-  - "2 ox\xEDgeno y 1 hidr\xF3geno"
-  - "2 hidr\xF3geno y 1 ox\xEDgeno"
+  - "2 de ox\xEDgeno y 1 de helio"
+  - "2 de helio y 1 de ox\xEDgeno"
+  - "2 de ox\xEDgeno y 1 de hidr\xF3geno"
+  - "2 de hidr\xF3geno y 1 de ox\xEDgeno"
   correctAnswer: 3

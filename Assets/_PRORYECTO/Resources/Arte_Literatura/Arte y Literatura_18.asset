@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 1
   categoryColor: {r: 0.9490197, g: 0.83921576, b: 0.23529413, a: 1}
-  statementQuestion: Quien hizo "El David"
+  statementQuestion: "\xBFQui\xE9n esculpi\xF3 \"El David\"?"
   options:
   - Un amigo de "El david"
   - Henry Moore

@@ -17,8 +17,8 @@ MonoBehaviour:
   statementQuestion: "\xBFCu\xE1l es el ciclo de estados de la materia de fr\xEDa
     a caliente?"
   options:
-  - "gaseoso, l\xEDquido, duro"
-  - "S\xF3lido, l\xEDquido, gaseoso"
-  - "aire, l\xEDquido, duro"
-  - "s\xF3lido, l\xEDquido, aire"
+  - "Gaseoso, l\xEDquido y duro"
+  - "S\xF3lido, l\xEDquido y gaseoso"
+  - "Aire, l\xEDquido y duro"
+  - "S\xF3lido, l\xEDquido y aire"
   correctAnswer: 1

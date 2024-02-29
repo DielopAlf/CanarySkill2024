@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 5
   categoryColor: {r: 0.9490197, g: 0.5568628, b: 0.69803923, a: 1}
-  statementQuestion: "\xBFQui\xE9n interpreta a Iron Man en su pel\xEDcula de 2008? "
+  statementQuestion: "\xBFQui\xE9n interpreta al personaje \"Iron Man\" en su pel\xEDcula
+    hom\xF3nima de 2008? "
   options:
   - Tom Cruise
   - Robert Downey Jr

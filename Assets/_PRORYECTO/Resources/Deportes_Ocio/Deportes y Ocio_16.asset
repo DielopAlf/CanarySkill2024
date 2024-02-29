@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 4
   categoryColor: {r: 0.9490197, g: 0.5294118, b: 0.015686275, a: 1}
-  statementQuestion: "\xBFQue cargo pol\xEDtico ostento el peque\xF1o Nicolas? "
+  statementQuestion: "\xBFQu\xE9 cargo pol\xEDtico ostenta \"El Peque\xF1o\" Nicol\xE1s? "
   options:
   - Ninguno
-  - Presidente del gobierno
+  - Presidente del Gobierno
   - Asesor Judicial
   - Primer Ministro
   correctAnswer: 0

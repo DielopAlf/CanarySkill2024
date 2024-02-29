@@ -17,8 +17,8 @@ MonoBehaviour:
   statementQuestion: "\xBFCu\xE1l es la isla m\xE1s peque\xF1a del archipi\xE9lago
     canario? "
   options:
-  - El hierro
+  - El Hierro
   - La Graciosa
   - La Palma
-  - "Tu t\xEDa"
+  - La Gomera
   correctAnswer: 1

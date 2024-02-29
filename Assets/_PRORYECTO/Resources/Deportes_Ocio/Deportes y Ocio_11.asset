@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 4
   categoryColor: {r: 0.9490197, g: 0.5294118, b: 0.015686275, a: 1}
-  statementQuestion: "\xBFA que empresa pertenece playstation? "
+  statementQuestion: "\xBFA qu\xE9 compa\xF1\xEDa pertenece la empresa PlayStation? "
   options:
   - Microsoft
   - Sony
   - Nintendo
-  - Ninguna
+  - Sega
   correctAnswer: 1

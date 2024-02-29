@@ -17,8 +17,8 @@ MonoBehaviour:
   statementQuestion: "\xBFCu\xE1nto puede llegar a medir los vasos sangu\xEDneos
     de un ser humano?"
   options:
-  - 100K km
-  - 10m
-  - 1 km
-  - 1M km
+  - 100.000 km.
+  - 10 m.
+  - 1 km.
+  - 1.000.000 km.
   correctAnswer: 0

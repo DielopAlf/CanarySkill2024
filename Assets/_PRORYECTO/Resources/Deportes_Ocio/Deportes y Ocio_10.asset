@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionCategory: 4
   categoryColor: {r: 0.9490197, g: 0.5294118, b: 0.015686275, a: 1}
-  statementQuestion: "\xBFCual de estas canciones NO es de michael jackson? "
+  statementQuestion: "\xBFCu\xE1l de estas canciones NO es de Michael Jackson? "
   options:
-  - Billie Bean
+  - Let It Be
   - Bad
   - Thriller
-  - Beat it
+  - Smooth Criminal
   correctAnswer: 0
