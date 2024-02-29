@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: CienciaNaturaleza_12
   m_EditorClassIdentifier: 
   questionCategory: 3
+  categoryColor: {r: 0.3019608, g: 0.6509804, b: 0.2901961, a: 1}
   statementQuestion: "\xBFCu\xE1l es el ciclo de estados de la materia de fr\xEDa
     a caliente?"
   options:

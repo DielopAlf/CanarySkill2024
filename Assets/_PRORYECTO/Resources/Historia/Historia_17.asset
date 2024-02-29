@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Historia_17
   m_EditorClassIdentifier: 
   questionCategory: 2
+  categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
   statementQuestion: "\xBFCu\xE1ndo inici\xF3 la edad contempor\xE1nea? "
   options:
   - 1900

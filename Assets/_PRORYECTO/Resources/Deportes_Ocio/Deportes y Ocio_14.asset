@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Deportes y Ocio_14
   m_EditorClassIdentifier: 
   questionCategory: 4
+  categoryColor: {r: 0.9490197, g: 0.5294118, b: 0.015686275, a: 1}
   statementQuestion: "\xBFCual es el deporte mas popular en europa? "
   options:
   - Futbol

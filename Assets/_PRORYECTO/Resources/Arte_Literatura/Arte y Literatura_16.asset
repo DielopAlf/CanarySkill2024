@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Arte y Literatura_16
   m_EditorClassIdentifier: 
   questionCategory: 1
+  categoryColor: {r: 0.9490197, g: 0.83921576, b: 0.23529413, a: 1}
   statementQuestion: "\xBFQui\xE9n pint\xF3 \u201CLa persistencia de la memoria\u201D? "
   options:
   - Bruno Mars

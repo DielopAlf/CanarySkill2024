@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18270032, g: 0.22840948, b: 0.30710182, a: 1}
+  m_IndirectSpecularColor: {r: 0.18326305, g: 0.22696182, b: 0.29506776, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -728,13 +728,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2656258, y: 0.50513315, z: -0.2154785, w: 0.7923714}
+  m_LocalRotation: {x: 0.16852896, y: -0.40063655, z: 0.11177033, w: 0.8936418}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 39.69, y: 63.065, z: -5.453}
+  m_LocalEulerAnglesHint: {x: 23.002, y: -47.474, z: 4.032}
 --- !u!114 &705507996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,8 +1154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerEnd: 15
   timerStart: 1.5
-  rondaTerminada: 0
-  tiempoTerminado: 0
   canvas: {fileID: 33440143}
 --- !u!4 &1846039734
 Transform:

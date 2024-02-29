@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: CienciaNaturaleza_5
   m_EditorClassIdentifier: 
   questionCategory: 3
+  categoryColor: {r: 0.3019608, g: 0.6509804, b: 0.2901961, a: 1}
   statementQuestion: "\xBFCu\xE1l es el animal vertebrado m\xE1s peque\xF1o del mundo?"
   options:
   - "Camale\xF3n Brookesia"

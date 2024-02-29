@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Historia_19
   m_EditorClassIdentifier: 
   questionCategory: 2
+  categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
   statementQuestion: "\xBFHace cu\xE1nto se construy\xF3 la Gran pir\xE1mide de Keops? "
   options:
   - "60.000 a\xF1os"

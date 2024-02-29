@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Historia_10
   m_EditorClassIdentifier: 
   questionCategory: 2
+  categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
   statementQuestion: "\xBFEn qu\xE9 a\xF1o cometi\xF3 su primer  asesinato Jack el
     destripador? "
   options:

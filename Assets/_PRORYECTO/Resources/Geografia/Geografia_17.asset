@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Geografia_17
   m_EditorClassIdentifier: 
   questionCategory: 0
+  categoryColor: {r: 0.03137255, g: 0.6901961, b: 0.95294124, a: 1}
   statementQuestion: "\xBFCu\xE1ntos municipios hay en Espa\xF1a? "
   options:
   - No se sabe

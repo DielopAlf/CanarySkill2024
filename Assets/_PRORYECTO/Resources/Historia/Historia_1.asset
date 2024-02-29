@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Historia_1
   m_EditorClassIdentifier: 
   questionCategory: 2
+  categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
   statementQuestion: "\xBFEn qu\xE9 a\xF1o cay\xF3 la bolsa de valores de Nueva York
     y dio inicio a \u201CLa gran depresi\xF3n\u201D? "
   options:

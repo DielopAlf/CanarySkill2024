@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Historia_14
   m_EditorClassIdentifier: 
   questionCategory: 2
+  categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
   statementQuestion: "\xBFHace cuanto se extinguieron los dinosaurios? "
   options:
   - "Hace 100 millones de a\xF1os"

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.UI.ProceduralImage;
 
 public class GameController : MonoBehaviour
 {
@@ -16,8 +17,15 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject questionText;
     [SerializeField] private GameObject[] optionsText;
     [SerializeField] private Button[] optionsButtons;
+    [SerializeField] private GameObject[] letters;
+    [SerializeField] private ProceduralImage[] lettersOptBg;
     [SerializeField]private QuestionManager questionManager;
     [SerializeField]private QuestionBase currentQuestion;
+    [Space(5)]
+    [Header("Colors")]
+    [SerializeField] private Color failColor;
+    [SerializeField] private Color successColor;
+    [SerializeField] private Color textColor;
     #endregion
     #region Public Field
     public Button[] OptionsButtons { get { return optionsButtons; } }
@@ -83,6 +91,9 @@ public class GameController : MonoBehaviour
             Debug.LogError("No se pudo obtener una pregunta.");
             return;
         }
+
+        Debug.Log("El tamaño de las respuesta es de: " + currentQuestion.options.Length);
+
         // Guarda el índice de la respuesta correcta
         int correctAnswerIndex = currentQuestion.correctAnswer;
 
@@ -90,21 +101,29 @@ public class GameController : MonoBehaviour
         ShuffleOptions(currentQuestion.options);
 
         // Muestra la pregunta y las opciones en la interfaz de usuario
-        questionText.GetComponent<TextMeshPro>().text = currentQuestion.statementQuestion;
+        questionText.GetComponent<TextMeshProUGUI>().text = currentQuestion.statementQuestion;  //Salida "Null Reference"
+        questionText.GetComponent<TextMeshProUGUI>().color = currentQuestion.categoryColor;
 
         for (int i = 0; i < currentQuestion.options.Length; i++)
         {
-            optionsText[i].GetComponent<TextMeshPro>().text = currentQuestion.options[i].ToString();
+            optionsText[i].GetComponent<TextMeshProUGUI>().text = currentQuestion.options[i].ToString();
+            optionsText[i].GetComponent<TextMeshProUGUI>().color = currentQuestion.categoryColor;
+            letters[i].GetComponent<TextMeshProUGUI>().color = textColor;
+            lettersOptBg[i].color = currentQuestion.categoryColor;
 
             // Identificamos la respuesta correcta y marca el botón correspondiente
             if (i == correctAnswerIndex)
             {
                 // Marca el botón de la respuesta correcta (opcional)
                 optionsButtons[i].GetComponent<OptionButton>().SetupOption(currentQuestion.options[i].ToString(), i);
+
+                //Refuerzo visual y sonoro de acierto,
+                //como pueden ser sistemas de particulas, sonidos o animaciones
             }
             else
             {
                 // Puedes realizar otras acciones para indicar que esta no es la respuesta correcta
+                //como sistemas de particulas, sonidos o animaciones
             }
         }
     }
@@ -122,6 +141,8 @@ public class GameController : MonoBehaviour
             //Logica adicional a la respuesta correcta
             //como activar un sistema de pariculas
             //un sonito, etc
+            optionsButtons[index].GetComponent<ProceduralImage>().color = successColor;
+            optionsButtons[index].GetComponentInChildren<TextMeshProUGUI>().color = textColor;
         }
         else
         {
@@ -129,6 +150,8 @@ public class GameController : MonoBehaviour
             //Logica adicional a la respuesta incorrecta
             //como activar un sistema de pariculas
             //un sonito, etc
+            optionsButtons[index].GetComponent<ProceduralImage>().color = failColor;
+            optionsButtons[index].GetComponentInChildren<TextMeshProUGUI>().color = textColor;
         }
         
         //Mostrar nueva Pregunta

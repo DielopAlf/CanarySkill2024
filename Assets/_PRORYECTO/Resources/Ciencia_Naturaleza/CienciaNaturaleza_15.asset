@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: CienciaNaturaleza_15
   m_EditorClassIdentifier: 
   questionCategory: 3
+  categoryColor: {r: 0.3019608, g: 0.6509804, b: 0.2901961, a: 1}
   statementQuestion: "\xBFDe qu\xE9 \xE1tomos est\xE1 compuesto el agua?"
   options:
   - "2 ox\xEDgeno y 1 helio"

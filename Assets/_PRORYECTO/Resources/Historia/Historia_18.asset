@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Historia_18
   m_EditorClassIdentifier: 
   questionCategory: 2
+  categoryColor: {r: 1, g: 0.18396229, b: 0.2962319, a: 1}
   statementQuestion: "\xBFCu\xE1ndo inici\xF3 el periodo Edo en Jap\xF3n? "
   options:
   - 1603

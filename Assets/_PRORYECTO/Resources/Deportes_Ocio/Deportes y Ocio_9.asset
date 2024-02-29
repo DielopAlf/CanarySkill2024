@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Deportes y Ocio_9
   m_EditorClassIdentifier: 
   questionCategory: 4
+  categoryColor: {r: 0.9490197, g: 0.5294118, b: 0.015686275, a: 1}
   statementQuestion: "\xBF Cual es la empresa de juguetes  m\xE1s valiosa del mundo? "
   options:
   - Mattel

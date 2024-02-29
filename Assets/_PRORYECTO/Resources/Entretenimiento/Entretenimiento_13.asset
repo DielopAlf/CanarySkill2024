@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Entretenimiento_13
   m_EditorClassIdentifier: 
   questionCategory: 5
+  categoryColor: {r: 0.9490197, g: 0.5568628, b: 0.69803923, a: 1}
   statementQuestion: "\xBFQu\xE9 actor interpret\xF3 a Superman en su pel\xEDcula
     de 1978? "
   options:
