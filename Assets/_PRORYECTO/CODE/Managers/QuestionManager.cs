@@ -31,7 +31,7 @@ public class QuestionManager : MonoBehaviour
             questions = new List<QuestionBase>();
 
             string[] folders = new string[] { "Arte_Literatura", "Ciencia_Naturaleza",
-            "Deportes_Ocio", "Entretenimiento", "Geografía", "Historia" };
+            "Deportes_Ocio", "Entretenimiento", "Geografía", "Historia", "Preguntas_Falsas" };
 
             foreach (var folder in folders)
             {

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4d060773845f5478122a631d797175, type: 3}
+  m_Name: Preguntas_Falsas_10
+  m_EditorClassIdentifier: 
+  questionCategory: 6
+  categoryColor: {r: 0.5349567, g: 0.2235294, b: 1, a: 1}
+  statementQuestion: "\xBFCu\xE1l es la  capital de la  Atl\xE1ntida?"
+  options:
+  - Ciudad Burbuja
+  - Aquaman city
+  - "submarin\xF3polis"
+  - Neptuno vegas
+  correctAnswer: 0
