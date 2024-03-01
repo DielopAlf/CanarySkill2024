@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public static GameController Instance { get { return instance; } }
     #endregion
     #region Private Fields
+    [SerializeField] private GameObject questionBackgroundGo;
     [SerializeField] private GameObject correctParticle;
     [SerializeField] private ScoreManager scoreManager;
     private int randomCategory;
@@ -28,6 +29,12 @@ public class GameController : MonoBehaviour
     [SerializeField] private Color failColor;
     [SerializeField] private Color successColor;
     [SerializeField] private Color textColor;
+    [Space(5)]
+    [Header("Animator")]
+    [SerializeField] private Animator anim;
+    [Space(5)]
+    [Header("Button Tap")]
+    [SerializeField] private GameObject buttonTap;
     #endregion
     #region Public Field
     public Button[] OptionsButtons { get { return optionsButtons; } }
@@ -46,6 +53,7 @@ public class GameController : MonoBehaviour
         bool isCorrect = (index == indexCorrectAnswer);
         return isCorrect;
     }
+    public bool showQuestion = false;
     public string testInt;
     #endregion
     #region Unity Methods
@@ -60,8 +68,9 @@ public class GameController : MonoBehaviour
     void Start()
     {
         questionManager = GetComponent<QuestionManager>();
-        
-        ShowNewQuestion();
+
+        //ShowNewQuestion();
+        LeanManager.Instance.TapTexAnimation();
     }
 
     // Update is called once per frame
@@ -86,6 +95,7 @@ public class GameController : MonoBehaviour
     #region Public Methods   
     public void ShowNewQuestion()
     {
+
         currentQuestion = questionManager.GetRandomQuestion();
         testInt = currentQuestion.options[currentQuestion.correctAnswer];
         Debug.Log(testInt);
@@ -164,5 +174,23 @@ public class GameController : MonoBehaviour
         //Mostrar nueva Pregunta
         ShowNewQuestion();
     }
+    public void GetBool()
+    {
+        StartCoroutine(InitMatch());
+    }
+    #region IEnumerators
+    IEnumerator InitMatch()
+    {
+        buttonTap.SetActive(false);
+        anim.SetTrigger("StartMatch");
+        yield return new WaitForSeconds(2.0f);
+        showQuestion = true;
+        ShowNewQuestion();
+        questionBackgroundGo.SetActive(true);
+        yield return new WaitForSeconds(3.0f);
+        showQuestion = false;
+        yield return showQuestion;
+    }
+    #endregion
     #endregion
 }

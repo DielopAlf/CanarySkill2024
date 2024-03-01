@@ -17,6 +17,9 @@ public class GameController_backUp : MonoBehaviour
     [SerializeField]private QuestionManager questionManager;
     [SerializeField]private QuestionBase currentQuestion;
     #endregion
+    #region Public Fields
+    
+    #endregion
     #region Unity Methods
     private void Awake()
     {
@@ -29,19 +32,20 @@ public class GameController_backUp : MonoBehaviour
     void Start()
     {
         questionManager = GetComponent<QuestionManager>();
-        
-        ShowNewQuestion();
+
+        //ShowNewQuestion();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     #endregion
     #region Public Methods
     public void ShowNewQuestion()
     {
+
         QuestionsCategories cat = (QuestionsCategories)(Random.Range(0, 5));
         //currentQuestion = questionManager.GetRandomQuestion(cat.ToString());
         category = currentQuestion.questionCategory;
@@ -85,5 +89,8 @@ public class GameController_backUp : MonoBehaviour
         //Mostrar nueva Pregunta
         ShowNewQuestion();
     }
+
+
     #endregion
+    
 }

@@ -350,10 +350,10 @@ RectTransform:
   - {fileID: 1755247118242024664}
   m_Father: {fileID: 6569573850903825586}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 154.49225}
-  m_SizeDelta: {x: 850, y: 500}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -115}
+  m_SizeDelta: {x: 1068.348, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1152272122246868369
 GameObject:
@@ -779,6 +779,7 @@ GameObject:
   - component: {fileID: 8214883071586260393}
   - component: {fileID: 5164890298238287085}
   - component: {fileID: 8153064742759689023}
+  - component: {fileID: 7254978413101759017}
   m_Layer: 5
   m_Name: AnswerButton (1)
   m_TagString: Untagged
@@ -858,7 +859,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7254978413101759017}
+        m_TargetAssemblyTypeName: OptionButton, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5164890298238287085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,6 +917,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: {x: 15, y: 15, z: 15, w: 15}
+--- !u!114 &7254978413101759017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597427092109509339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04786f6daf6962944bfd6a86ddfdbbfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionText: {fileID: 492282401687580615}
+  gameController: {fileID: 0}
 --- !u!1 &1710861519642673152
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +944,7 @@ GameObject:
   - component: {fileID: 8262852427377687823}
   - component: {fileID: 823095798919219192}
   - component: {fileID: 635878547716433531}
+  - component: {fileID: 2353229202122895539}
   m_Layer: 5
   m_Name: AnswerButton (3)
   m_TagString: Untagged
@@ -996,7 +1024,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2353229202122895539}
+        m_TargetAssemblyTypeName: OptionButton, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &823095798919219192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,6 +1082,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: {x: 15, y: 15, z: 15, w: 15}
+--- !u!114 &2353229202122895539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710861519642673152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04786f6daf6962944bfd6a86ddfdbbfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionText: {fileID: 5759637242220287555}
+  gameController: {fileID: 0}
 --- !u!1 &1891302825378953237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,10 +1226,10 @@ RectTransform:
   - {fileID: 4433013892797781914}
   m_Father: {fileID: 1755247118242024664}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 846.72, y: -50}
+  m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3600302458199698101
 CanvasRenderer:
@@ -1337,8 +1391,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -123}
-  m_SizeDelta: {x: 770, y: 300}
+  m_AnchoredPosition: {x: 11.104, y: -123}
+  m_SizeDelta: {x: 1046.1, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7760509283204429733
 MonoBehaviour:
@@ -1361,7 +1415,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 350, y: 100}
-  m_Spacing: {x: 68.1, y: 60}
+  m_Spacing: {x: 321.72, y: 60}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &2192057473620856607
@@ -1565,8 +1619,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Madrid
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
-  m_sharedMaterial: {fileID: 3902092746268012929, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
+  m_sharedMaterial: {fileID: -3473203146664971553, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1590,13 +1644,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontSizeMax: 40
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1669,10 +1723,10 @@ RectTransform:
   - {fileID: 1477348833613569237}
   m_Father: {fileID: 1755247118242024664}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -210}
+  m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8983200511967673643
 CanvasRenderer:
@@ -1832,10 +1886,10 @@ RectTransform:
   - {fileID: 1505933993747546817}
   m_Father: {fileID: 6817369511857047005}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 500}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 38.785}
+  m_SizeDelta: {x: 0, y: 577.571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8151582388800910856
 CanvasRenderer:
@@ -1903,6 +1957,7 @@ GameObject:
   - component: {fileID: 6630373799988373429}
   - component: {fileID: 7002603675225657421}
   - component: {fileID: 3955403360599376768}
+  - component: {fileID: 7132877849043121898}
   m_Layer: 5
   m_Name: AnswerButton (2)
   m_TagString: Untagged
@@ -1982,7 +2037,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7132877849043121898}
+        m_TargetAssemblyTypeName: OptionButton, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7002603675225657421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2028,6 +2095,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: {x: 15, y: 15, z: 15, w: 15}
+--- !u!114 &7132877849043121898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3296840812059074313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04786f6daf6962944bfd6a86ddfdbbfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionText: {fileID: 3448100033849751874}
+  gameController: {fileID: 0}
 --- !u!1 &3350085554346897770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,8 +2176,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Paris
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
-  m_sharedMaterial: {fileID: 3902092746268012929, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
+  m_sharedMaterial: {fileID: -3473203146664971553, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2120,13 +2201,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontSizeMax: 40
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2436,10 +2517,10 @@ RectTransform:
   - {fileID: 4204839335370188125}
   m_Father: {fileID: 1755247118242024664}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -50}
+  m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1699090709861738961
 CanvasRenderer:
@@ -2631,8 +2712,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Berlin
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
-  m_sharedMaterial: {fileID: 3902092746268012929, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
+  m_sharedMaterial: {fileID: -3473203146664971553, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2656,13 +2737,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontSizeMax: 40
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3124,7 +3205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6569573850903825586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3166,7 +3247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 0.9764706, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7607843}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3195,7 +3276,7 @@ GameObject:
   - component: {fileID: 3310312926090408170}
   - component: {fileID: 3448100033849751874}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: OptionText_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3475,8 +3556,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Londres
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
-  m_sharedMaterial: {fileID: 3902092746268012929, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
+  m_sharedMaterial: {fileID: -3473203146664971553, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3500,13 +3581,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontSizeMax: 40
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3554,7 +3635,7 @@ GameObject:
   - component: {fileID: 6060664257443096589}
   - component: {fileID: 5583370999285171286}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: OptionText_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3801,8 +3882,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 765.616, y: 432.225}
+  m_AnchoredPosition: {x: 0, y: 132.56}
+  m_SizeDelta: {x: 1018.44, y: 265.11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &133344702684480985
 CanvasRenderer:
@@ -3832,10 +3913,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cual es la capital de Francia?
+  m_text: "\xBFCu\xE1l es la capital de Francia?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
-  m_sharedMaterial: {fileID: 3902092746268012929, guid: 6d0b64a113187d545b6da2f9279d35c9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
+  m_sharedMaterial: {fileID: -3473203146664971553, guid: 333b0ea6157e8e54ea725297542290b9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3859,13 +3940,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -4047,7 +4128,7 @@ GameObject:
   - component: {fileID: 6189622875127629755}
   - component: {fileID: 492282401687580615}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: OptionText_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4274,7 +4355,7 @@ GameObject:
   - component: {fileID: 5597726059221426650}
   - component: {fileID: 5759637242220287555}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: OptionText_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4433,10 +4514,10 @@ RectTransform:
   - {fileID: 8652238132706421978}
   m_Father: {fileID: 1755247118242024664}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 846.72, y: -210}
+  m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2549323026507697435
 CanvasRenderer:
@@ -4956,6 +5037,7 @@ GameObject:
   - component: {fileID: 2530165612466617182}
   - component: {fileID: 8296986615260909949}
   - component: {fileID: 4662801111417383531}
+  - component: {fileID: 1525933298516769355}
   m_Layer: 5
   m_Name: AnswerButton
   m_TagString: Untagged
@@ -5035,7 +5117,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1525933298516769355}
+        m_TargetAssemblyTypeName: OptionButton, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8296986615260909949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5081,6 +5175,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: {x: 15, y: 15, z: 15, w: 15}
+--- !u!114 &1525933298516769355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8663331324291968840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04786f6daf6962944bfd6a86ddfdbbfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionText: {fileID: 5583370999285171286}
+  gameController: {fileID: 0}
 --- !u!1 &8706265368660544773
 GameObject:
   m_ObjectHideFlags: 0
