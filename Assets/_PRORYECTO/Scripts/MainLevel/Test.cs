@@ -92,7 +92,7 @@ public class Test : MonoBehaviour
         {
             currentplayerIndex++;
         }
-        GameManager.Instance.end = GameManager.Instance.timerEnd;
+        //GameManager.Instance.end = GameManager.Instance.timerEnd;
         StartCoroutine(IniciarDelay());
         if (currentQuestion == null)
         {
@@ -128,7 +128,7 @@ public class Test : MonoBehaviour
     }
     IEnumerator IniciarDelay()
     {
-        GameManager.Instance.start -= Time.deltaTime;
+        //GameManager.Instance.start -= Time.deltaTime;
         yield return null;
     }
     #endregion

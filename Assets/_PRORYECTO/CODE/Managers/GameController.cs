@@ -162,8 +162,8 @@ public class GameController : MonoBehaviour
         else if(index != currentQuestion.correctAnswer)
         {
             Debug.Log("La respuesta correcta era: " + currentQuestion.options[currentQuestion.correctAnswer]);
-            scoreManager.IncorrectAnswer(scoreManager.currentPlayer);
-            scoreManager.currentPlayer++;
+            ScoreManager.Instance.IncorrectAnswer(ScoreManager.Instance.currentPlayer);
+            ScoreManager.Instance.currentPlayer++;
             //Logica adicional a la respuesta incorrecta
             //como activar un sistema de pariculas
             //un sonito, etc

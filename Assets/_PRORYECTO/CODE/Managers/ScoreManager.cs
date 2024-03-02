@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+    #region Instance
+    private static ScoreManager instance;
+    public static ScoreManager Instance { get { return instance; } }
+    #endregion
     #region Private Fields
     [SerializeField] private HudManager hudManager;
     [SerializeField] private int numberOfPlayer;
@@ -26,9 +30,24 @@ public class ScoreManager : MonoBehaviour
     {
         if (currentPlayer > numberOfPlayer - 1) { currentPlayer = 0; }
     }
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     #endregion
     #region Public Methods
     public void IncorrectAnswer(int index)
+    {
+        int score = GetScore(index);
+
+        scores[index]--;
+        hudManager.UpdateScore();
+    }
+    public void TimeOut(int index)
     {
         int score = GetScore(index);
 

@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class Game_Manager : MonoBehaviour
 {
 
-    private static GameManager instance;
-    public static GameManager Instance { get { return instance; } }
+    private static Game_Manager instance;
+    public static Game_Manager Instance { get { return instance; } }
 
     public float timerEnd = 10;
     public float timerStart = 3;
